@@ -18,7 +18,7 @@
                     <th>Nombre</th>
                     <th>Region</th>
                     <th>Comida</th>
-                    <th>Edita</th>
+                    <th>Editar</th>
                     <th>Eliminar</th>
                 </tr>
             </thead>
@@ -29,7 +29,7 @@
                     <td><?php echo $ver['nombre']; ?></td>
                     <td><?php echo $ver['region']; ?></td>
                     <td><?php echo $ver['comida']; ?></td>
-                    <td><a href="#" class="btn btn-warning">Editar</a></td>
+                    <td><a href="./editar.php?idanimal=<?php echo $ver['id_animal']; ?>" class="btn btn-warning">Editar</a></td>
                     <td><a href="./backend/eliminar.php?idanimal=<?php echo $ver['id_animal']; ?>" class="btn btn-danger">Eliminar</a></td>
                 </tr>
                 <?php endwhile; ?>
